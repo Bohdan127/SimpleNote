@@ -1,8 +1,8 @@
-﻿using DevExpress.XtraBars.Alerter;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows;
+using DevExpress.XtraBars.Alerter;
 
-namespace WpfApplicationTest
+namespace SimpleNote.WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -20,11 +20,18 @@ namespace WpfApplicationTest
 
         private void AlertControl_FormLoad(object sender, AlertFormLoadEventArgs e)
         {
-            e.Buttons.PinButton.Down = CheckEditPin.IsChecked.HasValue &&
-                CheckEditPin.IsChecked.Value;
+            e.Buttons.PinButton.SetDown(CheckEditPin.IsChecked.HasValue &&
+                CheckEditPin.IsChecked.Value);
         }
 
         private void ButtonShow_Click(object sender, RoutedEventArgs e)
+        {
+            var img = GetImage();
+
+            alertControl.Show(null, TextEditTitle.Text, TextEditText.Text, img);
+        }
+
+        private Image GetImage()
         {
             Image img;
             switch (ComboBoxEditType.SelectedIndex)
@@ -38,9 +45,8 @@ namespace WpfApplicationTest
                 default:
                     img = Image.FromFile(@".\Images\warning.png");
                     break;
-
             }
-            alertControl.Show(null, TextEditTitle.Text, TextEditText.Text, img);
+            return img;
         }
     }
 }

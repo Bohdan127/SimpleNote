@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApplicationTest"
-        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
-    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-    x:Class="WpfApplicationTest.MainWindow"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" 
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        x:Class="SimpleNote.WPF.MainWindow"
         mc:Ignorable="d"
-        Title="Simple Note" Height="264.546" Width="288.636" MinHeight="264.546" MinWidth="264.546">
+        Title="Simple Note" Height="264.546" Width="288.636" MinHeight="264.546" MinWidth="264.546" Icon="{dx:DXImage Image=Notes_32x32.png}">
     <Grid>
 
         <dxlc:DataLayoutControl HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" AutoGenerateItems="False"  >
