@@ -6,3 +6,4 @@
 /SimpleNote/.vs/SimpleNote/v15
 /SimpleNote/SimpleNote/obj
 *.bak
+/SimpleNote/SimpleNote/bin/Release
