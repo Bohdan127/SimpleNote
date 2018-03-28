@@ -7,3 +7,5 @@
 /SimpleNote/SimpleNote/obj
 *.bak
 /SimpleNote/SimpleNote/bin/Release
+/SimpleNote/SimpleNote/bin/Debug
+/SimpleNote/packages/ToolsPortable.1.1.0
